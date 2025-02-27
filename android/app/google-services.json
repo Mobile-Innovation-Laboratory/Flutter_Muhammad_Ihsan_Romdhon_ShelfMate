@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "342275214248",
+    "project_id": "shelfmate-d370c",
+    "storage_bucket": "shelfmate-d370c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342275214248:android:b09603f2d3c028e690eb9d",
+        "android_client_info": {
+          "package_name": "com.example.shelfmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDDCi5kd-oCCzSen-LTO--RY-1_q18DIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
