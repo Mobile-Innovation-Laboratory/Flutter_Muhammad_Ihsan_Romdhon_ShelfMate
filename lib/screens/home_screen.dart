@@ -122,11 +122,18 @@ class HomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.vertical(
                                   top: Radius.circular(12)),
                               child: Image.network(
-                                book['cover'] ??
-                                    "https://via.placeholder.com/150",
+                                book['cover'] ?? "assets/images/no_image.png",
                                 height: 120,
                                 width: double.infinity,
                                 fit: BoxFit.cover,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Image.asset(
+                                    'assets/images/no_image.png',
+                                    height: 120,
+                                    width: double.infinity,
+                                    fit: BoxFit.cover,
+                                  );
+                                },
                               ),
                             ),
                             Padding(
@@ -193,11 +200,18 @@ class HomeScreen extends StatelessWidget {
                               borderRadius: BorderRadius.vertical(
                                   top: Radius.circular(12)),
                               child: Image.network(
-                                book['cover'] ??
-                                    "https://via.placeholder.com/150",
+                                book['cover'] ?? "assets/images/no_image.png",
                                 height: 150,
                                 width: double.infinity,
                                 fit: BoxFit.cover,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Image.asset(
+                                    'assets/images/no_image.png',
+                                    height: 150,
+                                    width: double.infinity,
+                                    fit: BoxFit.cover,
+                                  );
+                                },
                               ),
                             ),
                             Padding(
@@ -260,10 +274,18 @@ class HomeScreen extends StatelessWidget {
                       leading: ClipRRect(
                         borderRadius: BorderRadius.circular(8),
                         child: Image.network(
-                          book['cover'] ?? "https://via.placeholder.com/150",
+                          book['cover'] ?? "assets/images/no_image.png",
                           height: 50,
                           width: 50,
                           fit: BoxFit.cover,
+                          errorBuilder: (context, error, stackTrace) {
+                            return Image.asset(
+                              'assets/images/no_image.png',
+                              height: 50,
+                              width: 50,
+                              fit: BoxFit.cover,
+                            );
+                          },
                         ),
                       ),
                       title: Text(
